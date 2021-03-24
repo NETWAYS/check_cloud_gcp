@@ -1,0 +1,27 @@
+{
+  "id": "projects/foobar/zones",
+  "items": [
+    {
+      "id": "2300",
+      "creationTimestamp": "1969-12-31T16:00:00.000-08:00",
+      "name": "europe-west3-c",
+      "description": "europe-west3-c",
+      "status": "UP",
+      "region": "https://www.googleapis.com/compute/v1/projects/foobar/regions/europe-west3",
+      "selfLink": "https://www.googleapis.com/compute/v1/projects/foobar/zones/europe-west3-c",
+      "availableCpuPlatforms": [
+        "Intel Cascade Lake",
+        "Intel Skylake",
+        "Intel Broadwell",
+        "Intel Haswell",
+        "Intel Ivy Bridge",
+        "Intel Sandy Bridge",
+        "AMD Rome"
+      ],
+      "supportsPzs": false,
+      "kind": "compute#zone"
+    }
+  ],
+  "selfLink": "https://www.googleapis.com/compute/v1/projects/foobar/zones",
+  "kind": "compute#zoneList"
+}
