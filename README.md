@@ -1,6 +1,7 @@
 # check_cloud_gcp
 
-Icinga check plugin to check Google Cloud Platform resources. At the moment the check only supports the Compute Engine context.
+Icinga check plugin to check Google Cloud Platform (GCP) resources. At the moment the check only supports the
+Compute Engine (GCE) context.
 
 ## Usage
 
