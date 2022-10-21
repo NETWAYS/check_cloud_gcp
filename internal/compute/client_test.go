@@ -3,16 +3,16 @@ package compute
 import (
 	"check_cloud_gcp/internal/compute/common"
 	"context"
-	"github.com/NETWAYS/go-check/http/mock"
+	"net/http"
+	"os"
+	"testing"
+
+	checkhttpmock "github.com/NETWAYS/go-check/http/mock"
 	"github.com/jarcoal/httpmock"
 	"github.com/stretchr/testify/assert"
 	"golang.org/x/oauth2/google"
 	"google.golang.org/api/compute/v1"
 	"google.golang.org/api/option"
-	"io/ioutil"
-	"net/http"
-	"os"
-	"testing"
 )
 
 var GcpProjectName = "foobar"
@@ -59,7 +59,7 @@ func testClientWithMock() (client *Client, cleanup func()) {
 
 func newJsonFileResponder(fileName string) func(request *http.Request) (*http.Response, error) {
 	return func(request *http.Request) (*http.Response, error) {
-		data, err := ioutil.ReadFile(fileName)
+		data, err := os.ReadFile(fileName)
 		if err != nil {
 			return nil, err
 		}
