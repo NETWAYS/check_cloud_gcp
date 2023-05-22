@@ -6,7 +6,7 @@ require (
 	github.com/NETWAYS/go-check v0.4.1
 	github.com/jarcoal/httpmock v1.3.0
 	github.com/spf13/cobra v1.7.0
-	github.com/stretchr/testify v1.8.2
+	github.com/stretchr/testify v1.8.3
 	golang.org/x/oauth2 v0.8.0
 	google.golang.org/api v0.123.0
 )
