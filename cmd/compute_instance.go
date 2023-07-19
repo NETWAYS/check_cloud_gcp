@@ -3,6 +3,7 @@ package cmd
 import (
 	"check_cloud_gcp/internal/compute"
 	"fmt"
+
 	"github.com/NETWAYS/go-check"
 	"github.com/spf13/cobra"
 )
@@ -34,7 +35,7 @@ var vmInstanceCmd = &cobra.Command{
 
 		output := instance.GetOutput()
 
-		check.Exit(instance.GetStatus(), output)
+		check.ExitRaw(instance.GetStatus(), output)
 	},
 }
 
