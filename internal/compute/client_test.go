@@ -1,13 +1,14 @@
 package compute
 
 import (
-	"check_cloud_gcp/internal/compute/common"
 	"context"
 	"net/http"
 	"os"
 	"testing"
 
-	checkhttpmock "github.com/NETWAYS/go-check/http/mock"
+	"github.com/NETWAYS/check_cloud_gcp/internal/compute/common"
+
+	"github.com/NETWAYS/go-check-network/http/mock"
 	"github.com/jarcoal/httpmock"
 	"github.com/stretchr/testify/assert"
 	"golang.org/x/oauth2/google"

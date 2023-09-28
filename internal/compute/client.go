@@ -1,9 +1,10 @@
 package compute
 
 import (
-	"check_cloud_gcp/internal/compute/common"
 	"context"
 	"fmt"
+
+	"github.com/NETWAYS/check_cloud_gcp/internal/compute/common"
 	"golang.org/x/oauth2/google"
 	"google.golang.org/api/compute/v1"
 	"google.golang.org/api/option"

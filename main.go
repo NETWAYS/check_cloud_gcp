@@ -1,8 +1,9 @@
 package main
 
 import (
-	"check_cloud_gcp/cmd"
 	"fmt"
+
+	"github.com/NETWAYS/check_cloud_gcp/cmd"
 )
 
 // nolint: gochecknoglobals
