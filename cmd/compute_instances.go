@@ -1,8 +1,9 @@
 package cmd
 
 import (
-	"check_cloud_gcp/internal/compute"
 	"fmt"
+
+	"github.com/NETWAYS/check_cloud_gcp/internal/compute"
 	"github.com/NETWAYS/go-check"
 	"github.com/NETWAYS/go-check/result"
 	"github.com/spf13/cobra"
@@ -57,7 +58,7 @@ var vmInstancesCmd = &cobra.Command{
 				"Otherwise, the plugin will query *every* zone worldwide for instances!\n" + output
 		}
 
-		check.Exit(overallStatus, summary+"\n"+output)
+		check.ExitRaw(overallStatus, summary+"\n"+output)
 	},
 }
 
