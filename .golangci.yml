@@ -1,6 +1,7 @@
 run:
   timeout: 5m
-  skip-files:
+
+issues.exclude-files:
     - '(.+)_test\.go'
 
 linters:
@@ -11,16 +12,14 @@ linters:
     - dupl
     - whitespace
     - wsl
-    - exportloopref
+    - copyloopvar
   disable:
-    - scopelint
     - bodyclose
     - contextcheck
     - nilerr
     - noctx
     - rowserrcheck
     - sqlclosecheck
-    - structcheck
     - unparam
     - musttag
   presets:
