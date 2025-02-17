@@ -1,7 +1,8 @@
 module github.com/NETWAYS/check_cloud_gcp
 
-go 1.22.0
-toolchain go1.23.4
+go 1.22.7
+
+toolchain go1.23.6
 
 require (
 	github.com/NETWAYS/go-check v0.6.2
