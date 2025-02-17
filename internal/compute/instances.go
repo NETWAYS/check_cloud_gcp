@@ -22,7 +22,7 @@ func (i *Instances) GetStatus() int {
 	return result.WorstState(states...)
 }
 
-func (i Instances) GetOutput() (output string) {
+func (i *Instances) GetOutput() (output string) {
 	mapped := map[string][]*Instance{}
 
 	// Index instances by zone
