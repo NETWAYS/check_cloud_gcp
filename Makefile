@@ -1,9 +1,7 @@
 .PHONY: test coverage lint vet
 
 build:
-	go build
-goreleaser:
-	goreleaser release --snapshot --rm-dis
+	CGO_ENABLED=0 go build
 lint:
 	go fmt $(go list ./... | grep -v /vendor/)
 vet:
