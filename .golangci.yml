@@ -1,22 +1,51 @@
-run:
-  timeout: 5m
-
-issues:
-  exclude-files:
-    - '(.+)_test\.go'
-
+version: "2"
 linters:
-  disable-all: false
+  enable:
+    - asasalint
+    - asciicheck
+    - bidichk
+    - durationcheck
+    - errchkjson
+    - errorlint
+    - exhaustive
+    - gocheckcompilerdirectives
+    - gochecksumtype
+    - gosec
+    - gosmopolitan
+    - loggercheck
+    - makezero
+    - nilnesserr
+    - protogetter
+    - reassign
+    - recvcheck
+    - spancheck
+    - testifylint
+    - zerologlint
   disable:
     - bodyclose
     - contextcheck
+    - musttag
     - nilerr
     - noctx
     - rowserrcheck
     - sqlclosecheck
     - unparam
-    - musttag
-  presets:
-    - bugs
-    - unused
-  fast: false
+  exclusions:
+    generated: lax
+    presets:
+      - comments
+      - common-false-positives
+      - legacy
+      - std-error-handling
+    paths:
+      - (.+)_test\.go
+      - third_party$
+      - builtin$
+      - examples$
+formatters:
+  exclusions:
+    generated: lax
+    paths:
+      - third_party$
+      - builtin$
+      - examples$
