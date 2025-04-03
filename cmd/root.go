@@ -13,13 +13,13 @@ var (
 )
 
 var rootCmd = &cobra.Command{
-	Use:     "check_cloud_gcp",
-	Short:   "Icinga check plugin to check Google Cloud virtual machines.",
+	Use:   "check_cloud_gcp",
+	Short: "Check plugin to check Google Cloud virtual machines.",
 	PersistentPreRun: func(cmd *cobra.Command, args []string) {
 		go check.HandleTimeout(Timeout)
 
-		if JsonFile == "" && os.Getenv("GOOGLE_APPLICATION_CREDENTIALS") == ""{
-			err := fmt.Errorf("Please specify the service GCP account key file")
+		if JsonFile == "" && os.Getenv("GOOGLE_APPLICATION_CREDENTIALS") == "" {
+			err := fmt.Errorf("please specify the service GCP account key file")
 			check.ExitError(err)
 		} else if os.Getenv("GOOGLE_APPLICATION_CREDENTIALS") != "" {
 			JsonFile = os.Getenv("GOOGLE_APPLICATION_CREDENTIALS")

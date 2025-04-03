@@ -98,9 +98,7 @@ func (c *Client) LoadAllInstances(zone, filter string) (instances *Instances, er
 			return
 		}
 
-		for _, i := range zoneInstances.Instances {
-			instances.Instances = append(instances.Instances, i)
-		}
+		instances.Instances = append(instances.Instances, zoneInstances.Instances...)
 	}
 
 	return
