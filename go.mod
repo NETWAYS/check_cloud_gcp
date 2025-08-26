@@ -7,7 +7,7 @@ toolchain go1.24.1
 require (
 	github.com/NETWAYS/go-check v0.6.2
 	github.com/NETWAYS/go-check-network/http v0.0.0-20230928080609-57070f836e41
-	github.com/jarcoal/httpmock v1.4.0
+	github.com/jarcoal/httpmock v1.4.1
 	github.com/spf13/cobra v1.9.1
 	github.com/stretchr/testify v1.11.0
 	golang.org/x/oauth2 v0.30.0
