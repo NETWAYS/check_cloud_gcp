@@ -8,7 +8,7 @@ require (
 	github.com/NETWAYS/go-check v0.6.2
 	github.com/NETWAYS/go-check-network/http v0.0.0-20230928080609-57070f836e41
 	github.com/jarcoal/httpmock v1.4.1
-	github.com/spf13/cobra v1.9.1
+	github.com/spf13/cobra v1.10.1
 	github.com/stretchr/testify v1.11.0
 	golang.org/x/oauth2 v0.31.0
 	google.golang.org/api v0.248.0
@@ -28,7 +28,7 @@ require (
 	github.com/googleapis/gax-go/v2 v2.15.0 // indirect
 	github.com/inconshreveable/mousetrap v1.1.0 // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
-	github.com/spf13/pflag v1.0.6 // indirect
+	github.com/spf13/pflag v1.0.9 // indirect
 	go.opentelemetry.io/auto/sdk v1.1.0 // indirect
 	go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp v0.61.0 // indirect
 	go.opentelemetry.io/otel v1.36.0 // indirect
