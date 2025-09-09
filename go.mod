@@ -1,6 +1,6 @@
 module github.com/NETWAYS/check_cloud_gcp
 
-go 1.24
+go 1.24.0
 
 toolchain go1.24.1
 
@@ -10,7 +10,7 @@ require (
 	github.com/jarcoal/httpmock v1.4.1
 	github.com/spf13/cobra v1.9.1
 	github.com/stretchr/testify v1.11.0
-	golang.org/x/oauth2 v0.30.0
+	golang.org/x/oauth2 v0.31.0
 	google.golang.org/api v0.248.0
 )
 
