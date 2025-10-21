@@ -5,7 +5,7 @@ go 1.24.0
 toolchain go1.24.1
 
 require (
-	github.com/NETWAYS/go-check v0.6.2
+	github.com/NETWAYS/go-check v0.6.3
 	github.com/NETWAYS/go-check-network/http v0.0.0-20230928080609-57070f836e41
 	github.com/jarcoal/httpmock v1.4.1
 	github.com/spf13/cobra v1.10.1
@@ -28,7 +28,7 @@ require (
 	github.com/googleapis/gax-go/v2 v2.15.0 // indirect
 	github.com/inconshreveable/mousetrap v1.1.0 // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
-	github.com/spf13/pflag v1.0.9 // indirect
+	github.com/spf13/pflag v1.0.10 // indirect
 	go.opentelemetry.io/auto/sdk v1.1.0 // indirect
 	go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp v0.61.0 // indirect
 	go.opentelemetry.io/otel v1.37.0 // indirect
