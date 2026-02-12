@@ -19,7 +19,7 @@ func NewHTTPClient(filename string, scopes ...string) (client *http.Client, cred
 
 	ctx := context.Background()
 
-	credential, err = google.CredentialsFromJSON(ctx, credData, scopes...)
+	credential, err = google.CredentialsFromJSONWithType(ctx, credData, google.ServiceAccount)
 	if err != nil {
 		err = fmt.Errorf("could not load credentials: %w", err)
 		return
